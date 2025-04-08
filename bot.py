@@ -85,7 +85,7 @@ def join(call):
         bot.delete_message(call.message.chat.id, call.message.message_id)
         markupJ = types.InlineKeyboardMarkup(row_width=1)
         item1 = types.InlineKeyboardButton("✘ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ", url='http://t.me/Aizamods')
-        item2 = types.InlineKeyboardButton("✘ Dᴇᴠᴇʟᴏᴘᴇʀ",url='https://t.me/MrrrAdarsh')
+        item2 = types.InlineKeyboardButton("✘ Dᴇᴠᴇʟᴏᴘᴇʀ",url='https://t.me/sudipx')
         markupJ.add(item1, item2)
         bot.send_photo(user_id,photo='https://t.me/Bots_Pay_Alert/941',caption=f"""✘ Hey 👋 !!!
 
