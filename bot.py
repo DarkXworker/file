@@ -18,7 +18,7 @@ def save_data(file_name, data):
         return True
     except Exception as e:
         return False
-bot = telebot.TeleBot("6455327757:AAGfRYLofYF0xS109IAf7Fy_68dh9Ix2yjY")
+bot = telebot.TeleBot("7989601223:AAHbZzu5NU8J4xHxWEviA9oB6SuODxlLx-8")
 bot.delete_webhook()
 bot_username = bot.get_me().username
 channel_username = '@Aizamods'
@@ -55,7 +55,7 @@ def start(message):
     except:
         return
     try:
-        bot.copy_message(chat_id=chat.id, from_chat_id='-1002007843813', message_id=params)
+        bot.copy_message(chat_id=chat.id, from_chat_id='-1002565955658', message_id=params)
     except:
         pass
 @bot.message_handler(content_types=['text', 'photo', 'audio', 'document', 'video', 'animation', 'voice', 'sticker','poll'])
@@ -75,7 +75,7 @@ def handle_content_types(message):
 
 👉 You Need To Join Our Channel To Use This Bot. </b>""", reply_markup=markup,parse_mode='HTML')
         return            
-    copied_message =  bot.copy_message(chat_id='-1002007843813', from_chat_id=message.chat.id, message_id=message.message_id)
+    copied_message =  bot.copy_message(chat_id='-1002565955658', from_chat_id=message.chat.id, message_id=message.message_id)
     bot.reply_to(message, f"https://t.me/{bot_username}?start={copied_message.message_id}") 
 @bot.callback_query_handler(func=lambda call: call.data == 'join')
 def join(call):
